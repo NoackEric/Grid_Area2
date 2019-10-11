@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "first first first   aside"
+    "second second second aside"
+    "artone artone arttwo arttwo"
+    "footer footer footer footer ";
+    grid-template-rows: 50px  auto auto auto 50px;
+    gap: 2px;
+}
+.header{
+    background:grey;
+    grid-area: header;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+li{
+    padding-left: 2em;
+}
+li:nth-of-type(3){
+    margin-left: auto;  
+    padding-right: 3em;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.first{
+    background: cadetblue;
+    grid-area: first;
+    justify-content: center;
+}
+.second{
+    background: rgb(101, 160, 162);
+    grid-area: second;
+    justify-content: center;
+}
+.aside{
+    background: rgb(182, 62, 182);
+    grid-area: aside;
+    justify-content: center;
+}
+.artone{
+    background: rgb(160, 95, 95);
+    grid-area: artone;
+    justify-content: center;
+}
+.arttwo{
+    background: rgb(238, 0, 0);
+    grid-area: arttwo;
+    justify-content: center;
+}
+.footer{
+    background: cadetblue;
+    grid-area: footer;
+    justify-content: center;
+}
